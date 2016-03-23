@@ -1,0 +1,69 @@
+---
+language: en
+item: network_layer
+
+title: Network Layer | Layer 3 | The OSI-Model
+description: Learn about the OSI Layer 3. The Network Layer. is where actual low level networking takes place, usually trough IPv4/v6. Including all the relevant Network layer protocols
+keywords:
+  - Network Layer
+  - OSI Layer 3
+  - ipv4
+  - ipv6
+  - OSI Model
+  - osi reference model
+  - 7 osi layer
+  - osi model layers
+  - osi model explained
+  - iso/osi reference model
+
+header:
+  icon: server
+  layer: Layer 3
+  title: Network Layer
+---
+
+<article class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-lg-5">
+      <h2>TL:DR;</h2>
+      <p class="big">IPv4/v6; RIP; QoS</p>
+      <p class="big">The network layer (also packet level) provides a defined benefit services for switching connections and packet-oriented services for the relaying of data packets. The data transmission in both cases will go over the entire communication network and includes the route search (routing) between the network nodes. Because not always a direct communication between the sender and the target is possible, packets must be forwarded by nodes that are on the way. Next mediated packets do not reach the higher layers, but are provided with a new intermediate target and sent to the next node.</p>
+<p class="big">The main tasks of the network layer is one of providing cross-network addresses, the routing and the construction and updating of routing tables and the fragmentation of data packets. But the negotiation and ensure a certain quality of service falls within the remit of the network layer.</p>
+      <h2>OSI Layer 3 - Network Layer</h2>
+      <blockquote>
+        <p>In the seven-layer OSI model of computer networking, the network layer is layer 3. The network layer is responsible for packet forwarding including routing through intermediate routers, since it knows the address of neighboring network nodes, and it also manages quality of service (QoS), and recognizes and forwards local host domain messages to the Transport layer (layer 4). The data link layer (layer 2) is responsible for media access control, flow control and error checking.</p>
+        <p>The network layer provides the functional and procedural means of transferring variable-length data sequences from a source to a destination host via one or more networks, while maintaining the quality of service functions.</p>
+        <cite><a href="https://en.wikipedia.org/wiki/Network_layer">Wikipedia</a></cite>
+      </blockquote>
+    </div>
+
+    <div class="col-md-4 col-lg-5">
+      <h2>Functions</h2>
+      <ul class="big">
+        <li>Connection model</li>
+        <li>Host addressing</li>
+        <li>Message forwarding</li>
+      </ul>
+
+      <h2>Popular Network Layer Protocols</h2>
+      <br>
+      <table class="table">
+        <tr><th>DDP</th><td>Datagram Delivery Protocol</td></tr>
+        <tr><th>DVMRP</th><td>Distance Vector Multicast Routing Protocol</td></tr>
+        <tr><th>ICMP</th><td>Internet Control Message Protocol</td></tr>
+        <tr><th>IGMP</th><td>Internet Group Management Protocol</td></tr>
+        <tr><th>IPsec</th><td>Internet Protocol Security</td></tr>
+        <tr><th>IPv4/IPv6</th><td>Internet Protocol</td></tr>
+        <tr><th>IPX</th><td>Internetwork Packet Exchange</td></tr>
+        <tr><th>PIM-DM</th><td>Protocol Independent Multicast Dense Mode</td></tr>
+        <tr><th>PIM-SM</th><td>Protocol Independent Multicast Sparse Mode</td></tr>
+        <tr><th>RSMLT</th><td>Routing Information Protocol</td></tr>
+        <tr><th></th><td>Shortest Path Bridging</td></tr>
+      </table>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <%= render '/partials/layers.html' %>
+    </div>
+  </div>
+</article>

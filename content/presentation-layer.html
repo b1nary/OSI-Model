@@ -1,0 +1,84 @@
+---
+language: en
+item: presentation_layer
+
+title: Presentation Layer | Layer 6 | The OSI-Model
+description: Learn about the OSI Layer 6. The Presentation Layer. The Layer for De/Encoding, De/Encryption and more. Including all the relevant Presentation layer protocols.
+keywords:
+  - Presentation Layer
+  - OSI Layer 6
+  - OSI Model
+  - osi reference model
+  - 7 osi layer
+  - osi model layers
+  - osi model explained
+  - iso/osi reference model
+
+header:
+  icon: hand-pointer-o
+  layer: Layer 6
+  title: Presentation Layer
+---
+
+<article class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-lg-5">
+      <h2>TL:DR;</h2>
+      <p class="big">De/Encryption, Encoding, String representation</p>
+        <p class="big">The presentation layer (data presentation layer, data provision level) sets the system-dependent representation of the data (for example, ASCII, EBCDIC) into an independent form, enabling the syntactically correct data exchange between different systems. Also, functions such as data compression and encryption are guaranteed that data to be sent by the application layer of a system that can be read by the application layer of another system to the layer 6. The presentation layer. If necessary, the presentation layer acts as a translator between different data formats, by making an understandable for both systems data format, the ASN.1 (Abstract Syntax Notation One) used.</p>
+      <h2>OSI Layer 6 - Presentation Layer</h2>
+      <blockquote>
+        <p>The presentation layer is responsible for the delivery and formatting of information to the application layer for further processing or display. It relieves the application layer of concern regarding syntactical differences in data representation within the end-user systems. An example of a presentation service would be the conversion of an EBCDIC-coded text computer file to an ASCII-coded file.</p>
+        <p>The presentation layer is the lowest layer at which application programmers consider data structure and presentation, instead of simply sending data in the form of datagrams or packets between hosts. This layer deals with issues of string representation - whether they use the Pascal method (an integer length field followed by the specified amount of bytes) or the C/C++ method (null-terminated strings, e.g. "thisisastring\0"). The idea is that the application layer should be able to point at the data to be moved, and the presentation layer will deal with the rest.</p>
+        <p>Serialization of complex data structures into flat byte-strings (using mechanisms such as TLV or XML) can be thought of as the key functionality of the presentation layer.</p>
+        <p>Encryption is typically done at this level too, although it can be done on the application, session, transport, or network layers, each having its own advantages and disadvantages. Decryption is also handled at the presentation layer. For example, when logging on to bank account sites the presentation layer will decrypt the data as it is received.[1] Another example is representing structure, which is normally standardized at this level, often by using XML. As well as simple pieces of data, like strings, more complicated things are standardized in this layer. Two common examples are 'objects' in object-oriented programming, and the exact way that streaming video is transmitted.</p>
+        <p>In many widely used applications and protocols, no distinction is made between the presentation and application layers. For example, HyperText Transfer Protocol (HTTP), generally regarded as an application-layer protocol, has presentation-layer aspects such as the ability to identify character encoding for proper conversion, which is then done in the application layer.</p>
+        <p>Within the service layering semantics of the OSI network architecture, the presentation layer responds to service requests from the application layer and issues service requests to the session layer.</p>
+        <p>In the OSI model: the presentation layer ensures the information that the application layer of one system sends out is readable by the application layer of another system. For example, a PC program communicates with another computer, one using extended binary coded decimal interchange code (EBCDIC) and the other using ASCII to represent the same characters. If necessary, the presentation layer might be able to translate between multiple data formats by using a common format.</p>
+        <cite><a href="https://en.wikipedia.org/wiki/Presentation_layer">Wikipedia</a></cite>
+      </blockquote>
+    </div>
+
+    <div class="col-md-4 col-lg-5">
+      <h2>Services</h2>
+      <ul class="big">
+        <li>Data conversion</li>
+        <li>Character code translation</li>
+        <li>Compression</li>
+        <li>Encryption and Decryption</li>
+      </ul>
+
+      <h2>Sublayers</h2>
+      <br>
+      <p>The Presentation OSI Layer is usually composed of 2 sublayers that are:</p>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>CASE <small>common application service element</small></h4>
+          <table class="table">
+            <tr><th>ACSE</th><td>Association Control Service Element</td></tr>
+            <tr><th>ROSE</th><td>Remote Operation Service Element</td></tr>
+            <tr><th>CCR</th><td>Commitment Concurrency and Recovery</td></tr>
+            <tr><th>RTSE</th><td>Reliable Transfer Service Element</td></tr>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <h4>SASE <small>specific application service element</small></h4>
+          <table class="table">
+            <tr><th>FTAM</th><td>File Transfer, Access and Manager</td></tr>
+            <tr><th>VT</th><td>Virtual Terminal</td></tr>
+            <tr><th>MOTIS</th><td>Message Oriented Text Interchange Standard</td></tr>
+            <tr><th>CMIP</th><td>Common Management Information Protocol</td></tr>
+            <tr><th>JTM</th><td>Job Transfer and Manipulation</td></tr>
+            <tr><th>MMS</th><td>Manufacturing Messaging Service</td></tr>
+            <tr><th>RDA</th><td>Remote Database Access</td></tr>
+            <tr><th>DTP</th><td>Distributed Transaction Processing</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <%= render '/partials/layers.html' %>
+    </div>
+  </div>
+</article>

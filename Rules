@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+
+compile '/**/*.html' do
+  filter :erb
+  layout '/default.*'
+end
+
+compile '/**/*.scss' do
+  filter :sass, style: :compact, syntax: :scss
+end
+
+route '/**/*.{html,md}' do
+  if item.identifier.to_s.include?('/index.html')
+    item.identifier.to_s
+  else
+    item.identifier.without_ext + '/index.html'
+  end
+end
+
+route '/**/*.scss' do
+  item.identifier.without_ext + '.css'
+end
+
+compile '/**/*' do
+  write item.identifier.to_s
+end
+
+layout '/**/*', :erb

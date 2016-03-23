@@ -1,0 +1,12 @@
+<meta property="og:title" content="<%= @item[:title] %>"/>
+<meta property="og:image" content="https://osi-model.com/social.png"/>
+<meta property="og:site_name" content="The OSI-Model"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content="<%= @item[:description] %>" />
+<% @config[:languages].map{ |k,c| c[:iso] }.each_with_index do |lang, i| %><% if i == 0 %><meta property="og:locale" content="<%= lang %>" /><% else %><meta property="og:locale:alternate" content="<%= lang %>" /><% end %>
+<% end %>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@talkb1nary">
+<meta name="twitter:title" content="<%= @item[:title] %>">
+<meta name="twitter:description" content="<%= @item[:description] %>">
+<meta name="twitter:image" content="https://osi-model.com/social.png">

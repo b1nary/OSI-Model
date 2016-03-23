@@ -1,0 +1,88 @@
+---
+language: en
+item: physical_layer
+
+title: Physical Layer | Layer 1 | The OSI-Model
+description: Learn about the OSI Layer 1. The Physical Layer. All the relevant Physical Layer technologies and a short description about osi layer 1
+keywords:
+  - Physical Layer
+  - OSI Layer 1
+  - OSI Model
+  - osi reference model
+  - 7 osi layer
+  - osi model layers
+  - osi model explained
+  - iso/osi reference model
+
+header:
+  icon: database
+  layer: Layer 1
+  title: Physical Layer
+---
+
+<article class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-lg-5">
+      <h2>TL:DR;</h2>
+      <p class="big">Physical Networking</p>
+      <p class="big">The physical layer is the lowest layer. This layer provides mechanical, electrical and other functional aids available to enable or disable, they maintain and transmit bits about physical connections. This may for example be electrical signals, optical signals (optical fiber, laser), electromagnetic waves (wireless networks) or sound. The techniques used are called technical transmission process. Devices and network components that are associated with the physical layer, for example, the antenna and the amplifier, plug and socket for the network cable, the repeater, the stroke, the transceiver, the T-bar and the terminator are (Terminator).</p>
+      <p class="big">Its physical layer digital bit transfer is accomplished on a wireline or cable-free transmission path. The sharing of a transmission medium can be carried out on this layer by static multiplexing and dynamic multiplexing. This requires not only the specifications of certain transmission media (for example, copper cable, fiber optic cable, power grid) and the definition of connectors further elements. Furthermore, it must be resolved at this level, in what way a single bit to be transmitted.</p>
+      <p class="big">This means the following: In computer networks today information is generally transmitted in the form of bit or symbol sequences. In copper cables and radio transmission, however, are modulated high frequency electromagnetic waves, the information carrier, in the optical waveguide light waves of a certain wavelength or different. The information carrier know no bit strings, but can take a lot more different states than just 0 or 1. For each type of transmission must therefore encoding are defined. That is due to the specification of the physical layer of a network.</p>
+      <p class="big">Typical hardware on this layer: repeaters, hubs, cables, plugs,</p>
+      <h2>OSI Layer 1 - Physical Layer</h2>
+      <blockquote>
+        <p>In the seven-layer OSI model of computer networking, the physical layer or layer 1 is the first and lowest layer. The implementation of this layer is often termed PHY.</p>
+        <p>The physical layer consists of the basic networking hardware transmission technologies of a network. It is a fundamental layer underlying the logical data structures of the higher level functions in a network. Due to the plethora of available hardware technologies with widely varying characteristics, this is perhaps the most complex layer in the OSI architecture.</p>
+        <p>The physical layer defines the means of transmitting raw bits rather than logical data packets over a physical link connecting network nodes. The bit stream may be grouped into code words or symbols and converted to a physical signal that is transmitted over a hardware transmission medium. The physical layer provides an electrical, mechanical, and procedural interface to the transmission medium. The shapes and properties of the electrical connectors, the frequencies to broadcast on, the modulation scheme to use and similar low-level parameters, are specified here.</p>
+        <p>Within the semantics of the OSI network architecture, the physical layer translates logical communications requests from the data link layer into hardware-specific operations to affect transmission or reception of electronic signals.</p>
+        <cite><a href="https://en.wikipedia.org/wiki/Physical_layer">Wikipedia</a></cite>
+      </blockquote>
+    </div>
+
+    <div class="col-md-4 col-lg-5">
+      <h2>Services</h2>
+      <ul class="big">
+        <li>Bit-by-bit or symbol-by-symbol delivery</li>
+        <li>Modulation</li>
+        <li>Line coding</li>
+        <li>Bit synchronization</li>
+        <li>Start-stop signalling</li>
+        <li>Circuit switching</li>
+        <li>Multiplexing</li>
+        <li>Carrier sense and collision detection</li>
+        <li>Physical network topology, like bus, ring, mesh or star network</li>
+        <li>...</li>
+      </ul>
+
+      <h2>Popular Physical Layer Technologies</h2>
+      <br>
+      <table class="table">
+        <tr><th>1-Wire</th><td></td></tr>
+        <tr><th>ARINC 818</th><td>Avionics Digital Video Bus</td></tr>
+        <tr><th>Bluetooth physical layer</th><td></td></tr>
+        <tr><th>CAN bus</th><td>(controller area network) physical layer</td></tr>
+        <tr><th>DSL</th><td></td></tr>
+        <tr><th>EIA RS-232</th><td>also: EIA-422, EIA-423, RS-449, RS-485</td></tr>
+        <tr><th>Etherloop</th><td></td></tr>
+        <tr><th>Ethernet physical layer</th><td>10BASE-T, 10BASE2, 10BASE5, 100BASE-TX, 100BASE-FX, 100BASE-T, 1000BASE-T, 1000BASE-SX and others</td></tr>
+        <tr><th>GSM</th><td>Um air interface physical layer</td></tr>
+        <tr><th>G.hn/G.9960</th><td>physical layer</td></tr>
+        <tr><th>I²C, I²S</th><td></td></tr>
+        <tr><th>IEEE 1394 interface</th><td></td></tr>
+        <tr><th>ISDN</th><td></td></tr>
+        <tr><th>IRDA</th><td>physical layer</td></tr>
+        <tr><th>ITU</th><td></td></tr>
+        <tr><th></th><td>Mobile Industry Processor Interface physical layer</td></tr>
+        <tr><th>OTN</th><td>Optical Transport Network</td></tr>
+        <tr><th>SPI</th><td></td></tr>
+        <tr><th>SMB</th><td></td></tr>
+        <tr><th>Telephone network modems</th><td></td></tr>
+        <tr><th>USB</th><td>physical layer</td></tr>
+      </table>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <%= render '/partials/layers.html' %>
+    </div>
+  </div>
+</article>

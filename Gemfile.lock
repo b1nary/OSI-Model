@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    colored (1.2)
+    cri (2.7.0)
+      colored (~> 1.2)
+    nanoc (4.1.4)
+      cri (~> 2.3)
+    sass (3.4.21)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  nanoc
+  sass
+
+BUNDLED WITH
+   1.11.2

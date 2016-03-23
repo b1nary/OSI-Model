@@ -1,0 +1,77 @@
+---
+language: en
+item: session_layer
+
+title: Session Layer | Layer 5 | The OSI-Model
+description: Learn about the OSI Layer 5. The Session Layer. Sessions are used as transport lane for network traffic. Including all the relevant session layer protocols.
+keywords:
+  - Session Layer
+  - OSI Layer 5
+  - X.225
+  - ISO 8327
+  - OSI Model
+  - osi reference model
+  - 7 osi layer
+  - osi model layers
+  - osi model explained
+  - iso/osi reference model
+
+header:
+  icon: cogs
+  layer: Layer 5
+  title: Session Layer
+---
+
+<article class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-lg-5">
+      <h2>TL:DR;</h2>
+      <p class="big">Build and control sessions</p>
+      <p class="big">The layer 5 (control of logical connections; also session layer) provides inter-process communication between two systems. Here you can find among others the protocol RPC (Remote Procedure Call). To resolve failures of meeting and similar problems, the session layer services for an organized and synchronized data exchange. To this end, recovery points, so-called fixed points (check points) introduced, where the session can be synchronized after a failure of a transport connection again without the transfer must start from the beginning again.</p>
+      <h2>OSI Layer 5 - Session Layer</h2>
+      <blockquote>
+        <p>In the seven-layer OSI model of computer networking, the session layer is layer 5.</p>
+        <p>The session layer provides the mechanism for opening, closing and managing a session between end-user application processes, i.e., a semi-permanent dialogue. Communication sessions consist of requests and responses that occur between applications. Session-layer services are commonly used in application environments that make use of remote procedure calls (RPCs).</p>
+        <p>An example of a session-layer protocol is the OSI protocol suite session-layer protocol, also known as X.225 or ISO 8327. In case of a connection loss this protocol may try to recover the connection. If a connection is not used for a long period, the session-layer protocol may close it and re-open it. It provides for either full duplex or half-duplex operation and provides synchronization points in the stream of exchanged messages.</p>
+        <p>Other examples of session layer implementations include Zone Information Protocol (ZIP) – the AppleTalk protocol that coordinates the name binding process, and Session Control Protocol (SCP) – the DECnet Phase IV session-layer protocol.</p>
+        <p>Within the service layering semantics of the OSI network architecture, the session layer responds to service requests from the presentation layer and issues service requests to the transport layer.</p>
+        <cite><a href="https://en.wikipedia.org/wiki/Session_layer">Wikipedia</a></cite>
+      </blockquote>
+    </div>
+
+    <div class="col-md-4 col-lg-5">
+      <h2>Services</h2>
+      <ul class="big">
+        <li>Authentication</li>
+        <li>Authorization</li>
+        <li>Session restoration</li>
+      </ul>
+
+      <h2>Popular Session Layer Protocols</h2>
+      <br>
+      <table class="table">
+        <tr><th>ADSP</th><td>AppleTalk Data Stream Protocol</td></tr>
+        <tr><th>ASP</th><td>AppleTalk Session Protocol</td></tr>
+        <tr><th>H.245</th><td>Call Control Protocol for Multimedia Communication</td></tr>
+        <tr><th>ISO-SP</th><td>OSI session-layer protocol (X.225, ISO 8327)</td></tr>
+        <tr><th>iSNS</th><td>Internet Storage Name Service</td></tr>
+        <tr><th>L2F</th><td>Layer 2 Forwarding Protocol</td></tr>
+        <tr><th>L2TP</th><td>Layer 2 Tunneling Protocol</td></tr>
+        <tr><th>NetBIOS</th><td>Network Basic Input Output System</td></tr>
+        <tr><th>PAP</th><td>Password Authentication Protocol</td></tr>
+        <tr><th>PPTP</th><td>Point-to-Point Tunneling Protocol</td></tr>
+        <tr><th>RPC</th><td>Remote Procedure Call Protocol</td></tr>
+        <tr><th>RTCP</th><td>Real-time Transport Control Protocol</td></tr>
+        <tr><th>SMPP</th><td>Short Message Peer-to-Peer</td></tr>
+        <tr><th>SCP</th><td>Session Control Protocol</td></tr>
+        <tr><th>SOCKS</th><td>the SOCKS internet protocol, see Internet socket</td></tr>
+        <tr><th>ZIP</th><td>Zone Information Protocol</td></tr>
+        <tr><th>SDP</th><td>Sockets Direct Protocol</td></tr>
+      </table>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <%= render '/partials/layers.html' %>
+    </div>
+  </div>
+</article>

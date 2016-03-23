@@ -1,0 +1,94 @@
+---
+language: en
+item: data_link_layer
+
+title: Data Link Layer | Layer 2 | The OSI-Model
+description: Learn about the OSI Layer 2. The Data Link Layer. MAC; VLAN; Encapsulation and synchronization of package frames. Including all the relevant Data link layer protocols
+keywords:
+  - Data Link Layer
+  - OSI Layer 2
+  - IEEE 802.2
+  - OSI Model
+  - osi reference model
+  - 7 osi layer
+  - osi model layers
+  - osi model explained
+  - iso/osi reference model
+
+header:
+  icon: database
+  layer: Layer 2
+  title: Data Link Layer
+---
+
+<article class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-lg-5">
+      <h2>TL:DR;</h2>
+      <p class="big">MAC; VLAN; Encapsulation into frames</p>
+      <p class="big">The object of the data link layer (also section link layer, connection level, procedure level) is to ensure a reliable, that is largely error-free transmission and to control access to the transmission medium. The purpose of dividing the Bitdatenstromes in blocks - as frames or frame designated - and the addition of checksums as part of the channel coding. So bad blocks are detected by the receiver and either discarded or even corrected; a renewed request discarded blocks sees this layer but not before.</p>
+<p class="big">A "flow control" makes it possible that a receiver dynamically controls the speed with which the other side must send blocks. The international engineering organization IEEE saw the need to regulate for local networks also competing access to a transmission medium, which is not foreseen in the OSI model.</p>
+<p class="big">Common hardware on this layer: Bridge, Switch (Multiport bridge)</p>
+      <h2>OSI Layer 2 - Data Link Layer</h2>
+      <blockquote>
+        <p>The data link layer or layer 2 is the second layer of the seven-layer OSI model of computer networking. This layer is the protocol layer that transfers data between adjacent network nodes in a wide area network (WAN) or between nodes on the same local area network (LAN) segment.[1] The data link layer provides the functional and procedural means to transfer data between network entities and might provide the means to detect and possibly correct errors that may occur in the physical layer.</p>
+        <p>The data link layer is concerned with local delivery of frames between devices on the same LAN. Data-link frames, as these protocol data units are called, do not cross the boundaries of a local network. Inter-network routing and global addressing are higher-layer functions, allowing data-link protocols to focus on local delivery, addressing, and media arbitration. This way, the data link layer is analogous to a neighborhood traffic cop; it endeavors to arbitrate between parties contending for access to a medium, without concern for their ultimate destination. When devices attempt to use a medium simultaneously, frame collisions occur. Data-link protocols specify how devices detect and recover from such collisions, and may provide mechanisms to reduce or prevent them.</p>
+        <p>Examples of data link protocols are Ethernet for local area networks (multi-node), the Point-to-Point Protocol (PPP), HDLC and ADCCP for point-to-point (dual-node) connections. In the Internet Protocol Suite (TCP/IP), the data link layer functionality is contained within the link layer, the lowest layer of the descriptive model.</p>
+        <cite><a href="https://en.wikipedia.org/wiki/Data_link_layer">Wikipedia</a></cite>
+      </blockquote>
+    </div>
+
+    <div class="col-md-4 col-lg-5">
+      <h2>Services</h2>
+      <ul class="big">
+        <li>Encapsulation</li>
+        <li>Frame synchronization</li>
+        <li>Logical link control (Error & Flow control)</li>
+        <li>Media access control (MAC, LAN switching, Physical addressing, QaS, VLAN, ...)</li>
+      </ul>
+
+      <h2>Popular Data Link Layer Protocols</h2>
+      <br>
+      <table class="table">
+        <tr><th>ARP</th><td>Address Resolution Protocol</td></tr>
+        <tr><th>ARCnet</th><td></td></tr>
+        <tr><th>ATM</th><td></td></tr>
+        <tr><th>CDP</th><td>Cisco Discovery Protocol</td></tr>
+        <tr><th>CAN</th><td>Controller Area Network</td></tr>
+        <tr><th>Econet</th><td></td></tr>
+        <tr><th>Ethernet</th><td></td></tr>
+        <tr><th>EAPS</th><td>Ethernet Automatic Protection Switching</td></tr>
+        <tr><th>FDDI</th><td>Fiber Distributed Data Interface</td></tr>
+        <tr><th>Frame Relay</th><td></td></tr>
+        <tr><th>HDLC</th><td>High-Level Data Link Control</td></tr>
+        <tr><th>IEEE 802.2</th><td>provides LLC functions to IEEE 802 MAC layers</td></tr>
+        <tr><th>IEEE 802.11</th><td>wireless LAN</td></tr>
+        <tr><th>I²C</th><td></td></tr>
+        <tr><th>LattisNet</th><td></td></tr>
+        <tr><th>LAPD</th><td>Link Access Procedures, D channel</td></tr>
+        <tr><th>LLDP</th><td>Link Layer Discovery Protocol</td></tr>
+        <tr><th>LocalTalk</th><td></td></tr>
+        <tr><th>MIL-STD-1553</th><td></td></tr>
+        <tr><th>MPLS</th><td>Multiprotocol Label Switching</td></tr>
+        <tr><th>NDP</th><td>Nortel Discovery Protocol</td></tr>
+        <tr><th>SDN</th><td>OpenFlow</td></tr>
+        <tr><th>PPP</th><td>Point-to-Point Protocol</td></tr>
+        <tr><th>Profibus</th><td></td></tr>
+        <tr><th>SpaceWire</th><td></td></tr>
+        <tr><th>SLIP</th><td>Serial Line Internet Protocol (obsolete)</td></tr>
+        <tr><th>SMLT</th><td>Split multi-link trunking</td></tr>
+        <tr><th>IEEE 802.1aq</th><td>Shortest Path Bridging</td></tr>
+        <tr><th>Spanning Tree Protocol</th><td></td></tr>
+        <tr><th>StarLan</th><td></td></tr>
+        <tr><th>Token ring</th><td></td></tr>
+        <tr><th>UDLD</th><td>Unidirectional Link Detection</td></tr>
+        <tr><th>UNI/O</th><td></td></tr>
+        <tr><th>1-Wire</th><td></td></tr>
+      </table>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <%= render '/partials/layers.html' %>
+    </div>
+  </div>
+</article>

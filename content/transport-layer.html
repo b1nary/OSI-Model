@@ -1,0 +1,79 @@
+---
+language: en
+item: transport_layer
+
+title: Transport Layer | Layer 4 | The OSI-Model
+description: Learn about the OSI Layer 4. The Transport Layer. Responsible to deliver traffic from and to the host computer. Including all the relevant transport layer protocols.
+keywords:
+  - Transport Layer
+  - OSI Layer 4
+  - TCP
+  - UDP
+  - OSI Model
+  - osi reference model
+  - 7 osi layer
+  - osi model layers
+  - osi model explained
+  - iso/osi reference model
+
+header:
+  icon: bus
+  layer: Layer 4
+  title: Transport Layer
+---
+
+<article class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-lg-5">
+      <h2>TL:DR;</h2>
+      <p class="big">TCP; UDP; Transporation</p>
+      <p class="big">The tasks of the transport layer (also end-to-end control, transport control) include the segmentation of the data stream and in relieving congestion.</p>
+    	<p class="big">A data segment is a Service Data Unit, which is used for encapsulation on the fourth layer (transport layer). It consists of protocol elements that contain Layer 4 information control. When addressing the data segment assigned a Layer 4 address, so a port. The data segment is encapsulated in the layer 3 in a data packet.</p>
+    	<p class="big">The transport layer provides the application-oriented layers 5 to 7 standardized access so that they do not need to consider the characteristics of the communications network.</p>
+    	<p class="big">Five different service classes of different grades are defined in layer 4 and may be used by the upper layers, from the simplest to the most comfortable service with multiplex mechanisms, error protection and troubleshooting procedures..</p>
+      <h2>OSI Layer 4 - Transport Layer</h2>
+      <blockquote>
+        <p>In computer networking, the transport layer is a conceptual division of methods in the layered architecture of protocols in the network stack in the Internet Protocol Suite and the Open Systems Interconnection (OSI). The protocols of the layer provide host-to-host communication services for applications.[1] It provides services such as connection-oriented data stream support, reliability, flow control, and multiplexing.</p>
+        <p>The details of implementation and semantics of the Transport Layer of the TCP/IP model (RFC 1122), which is the foundation of the Internet, and the Open Systems Interconnection (OSI) model of general networking, are different. In the OSI model the transport layer is most often referred to as Layer 4 or L4, while numbered layers are not used in TCP/IP.</p>
+        <p>The best-known transport protocol of TCP/IP is the Transmission Control Protocol (TCP), and lent its name to the title of the entire suite. It is used for connection-oriented transmissions, whereas the connectionless User Datagram Protocol (UDP) is used for simpler messaging transmissions. TCP is the more complex protocol, due to its stateful design incorporating reliable transmission and data stream services. Other prominent protocols in this group are the Datagram Congestion Control Protocol (DCCP) and the Stream Control Transmission Protocol (SCTP).</p>
+        <cite><a href="https://en.wikipedia.org/wiki/Transport_layer">Wikipedia</a></cite>
+      </blockquote>
+    </div>
+
+    <div class="col-md-4 col-lg-5">
+      <h2>Services</h2>
+      <ul class="big">
+        <li>Connection-oriented communication</li>
+        <li>Same order delivery</li>
+        <li>Reliability</li>
+        <li>Flow control</li>
+        <li>Congestion avoidance</li>
+        <li>Port Multiplexing</li>
+      </ul>
+
+      <h2>Popular Transport Layer Protocols</h2>
+      <br>
+      <table class="table">
+        <tr><th>ATP</th><td>AppleTalk Transaction Protocol</td></tr>
+        <tr><th>CUDP</th><td>Cyclic UDP</td></tr>
+        <tr><th>DCCP</th><td>Datagram Congestion Control Protocol</td></tr>
+        <tr><th>FCP</th><td>Datagram Congestion Control Protocol</td></tr>
+        <tr><th>IL</th><td>Fibre Channel Protocol</td></tr>
+        <tr><th>MPTCP</th><td>IL Protocol</td></tr>
+        <tr><th>RDP</th><td>Multipath TCP</td></tr>
+        <tr><th>RUDP</th><td>Reliable User Datagram Protocol</td></tr>
+        <tr><th>SCTP</th><td>Stream Control Transmission Protocol</td></tr>
+        <tr><th>SPX</th><td>Sequenced Packet Exchange</td></tr>
+        <tr><th>SST</th><td>Structured Stream Transport</td></tr>
+        <tr><th>TCP</th><td>Transmission Control Protocol</td></tr>
+        <tr><th>UDP</th><td>User Datagram Protocol</td></tr>
+        <tr><th>UDP-Lite</th><td>User Datagram Protocol</td></tr>
+        <tr><th>µTP</th><td>Micro Transport Protocol</td></tr>
+      </table>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <%= render '/partials/layers.html' %>
+    </div>
+  </div>
+</article>

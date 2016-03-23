@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://osi-model.com/sitemap.xml

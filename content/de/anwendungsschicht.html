@@ -1,0 +1,118 @@
+---
+language: de
+item: application_layer
+
+title: Anwendungsshicht | Layer 7 | Das OSI-Modell
+description: "Lerne über den OSI Layer 7. Die Anwendungsshicht (eng: Application Layer). Er wird definiert als die Shicht der Informationen für den user präsentiert. Relevante Protokolle, Services."
+keywords:
+  - Anwendungsshicht
+  - Application Layer
+  - OSI Layer 7
+  - OSI Modell
+  - osi reference modell
+  - 7 osi layer
+  - osi modell layers
+  - osi modell beispiele
+  - iso/osi beispiel modell
+
+header:
+  icon: rocket
+  layer: Layer 7
+  title: Anwendungsshicht
+  small: Application Layer
+---
+
+<article class="container-fluid">
+  <div class="row">
+    <div class="col-lg-5 col-md-4">
+      <h2>TL:DR;</h2>
+      <p class="big">Top Level APIs; Application Networking</p>
+      <p class="big">Dienstleistungen, Anwendungen und Netzwerk-Management. Die Anwendungsschicht stellt Funktionen für die Anwendungen zu Verfügung. Diese Schicht stellt die Verbindung zu den unteren Schichten her. Auf dieser Ebene erfolgt die Dateneingabe und ausgabe Platz statt. Die Anwendungen selbst gehören nicht zu der Schicht.</p>
+      <p class="big">Typische Anwendungen: Web-Browser, E-Mail Client, ...</p>
+      <h2>OSI Layer 7 - Application Layer</h2>
+      <blockquote>
+        <p>An application layer is an abstraction layer that specifies the shared protocols and interface methods used by hosts in a communications network. The application layer abstraction is used in both of the standard models of computer networking; the Internet Protocol Suite (TCP/IP) and the Open Systems Interconnection model (OSI model).</p>
+        <p>Although both models use the same term for their respective highest level layer, the detailed definitions and purposes are different.</p>
+        <p>In TCP/IP, the application layer contains the communications protocols and interface methods used in process-to-process communications across an Internet Protocol (IP) computer network. The application layer only standardizes communication and depends upon the underlying transport layer protocols to establish host-to-host data transfer channels and manage the data exchange in a client-server or peer-to-peer networking model. Though the TCP/IP application layer does not describe specific rules or data formats that applications must consider when communicating, the original specification (in RFC 1123) does rely on and recommend the robustness principle for application design.</p>
+        <p>In the OSI model, the definition of the application layer is narrower in scope. The OSI model defines the application layer as the user interface responsible for displaying received information to the user. In contrast, the Internet Protocol model does not concern itself with such detail. OSI also explicitly distinguishes additional functionality below the application layer, but above the transport layer at two additional levels; the session layer and the presentation layer. OSI specifies a strict modular separation of functionality at these layers and provides protocol implementations for each layer.</p>
+        <cite><a href="https://en.wikipedia.org/wiki/Application_layer">Wikipedia</a></cite>
+      </blockquote>
+    </div>
+
+    <div class="col-lg-5 col-md-4">
+      <h2>Bekannte Application Layer Protokolle</h2>
+      <br>
+      <table class="table">
+        <tr><th>9P</th><td>Plan 9 from Bell Labs distributed file system protocol</td></tr>
+        <tr><th>AFP</th><td>Apple Filing Protocol</td></tr>
+        <tr><th>APPC</th><td>Advanced Program-to-Program Communication</td></tr>
+        <tr><th>AMQP</th><td>Advanced Message Queuing Protocol</td></tr>
+        <tr><th>Atom</th><td>Publishing Protocol</td></tr>
+        <tr><th>BEEP</th><td>Block Extensible Exchange Protocol</td></tr>
+        <tr><th>Bitcoin</th><td>Digital currency</td></tr>
+        <tr><th>BitTorrent</th><td>peer-to-peer file sharing </td></tr>
+        <tr><th>CFDP</th><td>Coherent File Distribution Protocol</td></tr>
+        <tr><th>CoAP</th><td>Constrained Application Protocol</td></tr>
+        <tr><th>DDS</th><td>Data Distribution Service</td></tr>
+        <tr><th>DeviceNet</th><td>automation industry protocol</td></tr>
+        <tr><th>eDonkey</th><td>classic file sharing protocol</td></tr>
+        <tr><th>ENRP</th><td>Endpoint Handlespace Redundancy Protocol</td></tr>
+        <tr><th>FastTrack</th><td>filesharing, known from KaZaa and more</td></tr>
+        <tr><th>Finger</th><td>User Information Protocol</td></tr>
+        <tr><th>Freenet</th><td>censorship resistant p2p network</td></tr>
+        <tr><th>FTAM</th><td>File Transfer Access and Management</td></tr>
+        <tr><th>Gopher</th><td>Gopher protocol</td></tr>
+        <tr><th>HL7</th><td>Health Level Seven</td></tr>
+        <tr><th>HTTP</th><td>HyperText Transfer Protocol</td></tr>
+        <tr><th>H.323</th><td>Packet-Based Multimedia Communications System</td></tr>
+        <tr><th>IRCP</th><td>Internet Relay Chat Protocol</td></tr>
+        <tr><th>Kademlia</th><td>p2p hashtables</td></tr>
+        <tr><th>LDAP</th><td>Lightweight Directory Access Protocol</td></tr>
+        <tr><th>LPD</th><td>Line Printer Daemon Protocol</td></tr>
+        <tr><th>MIME (S-MIME)</th><td>Multipurpose Internet Mail Extensions and Secure MIME</td></tr>
+        <tr><th>Modbus</th><td>Serial communications protocol</td></tr>
+        <tr><th>MQTT Protocol</th><td>MQ Telemetry Transport</td></tr>
+        <tr><th>Netconf</th><td>Network Configuration Protocol</td></tr>
+        <tr><th>NFS</th><td>Network File System</td></tr>
+        <tr><th>NIS</th><td>Network Information Service</td></tr>
+        <tr><th>NNTP</th><td>Network News Transfer Protocol</td></tr>
+        <tr><th>NTCIP</th><td>National Transportation Communications for Intelligent Transportation System Protocol</td></tr>
+        <tr><th>NTP</th><td>Network Time Protocol</td></tr>
+        <tr><th>OSCAR</th><td>AOL Instant Messenger Protocol</td></tr>
+        <tr><th>PNRP</th><td>Peer Name Resolution Protocol</td></tr>
+        <tr><th>RDP</th><td>Remote Desktop Protocol</td></tr>
+        <tr><th>RELP</th><td>Reliable Event Logging Protocol</td></tr>
+        <tr><th>RIP</th><td>Routing Information Protocol</td></tr>
+        <tr><th>Rlogin</th><td>Remote Login in UNIX Systems</td></tr>
+        <tr><th>RPC</th><td>Remote Procedure Call</td></tr>
+        <tr><th>RTMP</th><td>Real Time Messaging Protocol</td></tr>
+        <tr><th>RTP</th><td>Real-time Transport Protocol</td></tr>
+        <tr><th>RTPS</th><td>Real Time Publish Subscribe</td></tr>
+        <tr><th>RTSP</th><td>Real Time Streaming Protocol</td></tr>
+        <tr><th>SAP</th><td>Session Announcement Protocol</td></tr>
+        <tr><th>SDP</th><td>Session Description Protocol</td></tr>
+        <tr><th>SIP</th><td>Session Initiation Protocol</td></tr>
+        <tr><th>SLP</th><td>Service Location Protocol</td></tr>
+        <tr><th>SMB</th><td>Server Message Block</td></tr>
+        <tr><th>SMTP</th><td>Simple Mail Transfer Protocol</td></tr>
+        <tr><th>SNTP</th><td>Simple Network Time Protocol</td></tr>
+        <tr><th>SSH</th><td>Secure Shell</td></tr>
+        <tr><th>SSMS</th><td>Secure SMS Messaging Protocol</td></tr>
+        <tr><th>TCAP</th><td>Transaction Capabilities Application Part</td></tr>
+        <tr><th>TDS</th><td>Tabular Data Stream</td></tr>
+        <tr><th>Tor</th><td>anonymity network</td></tr>
+        <tr><th>TSP</th><td>Time Stamp Protocol</td></tr>
+        <tr><th>VTP</th><td>Virtual Terminal Protocol</td></tr>
+        <tr><th>Whois (and RWhois)</th><td>Remote Directory Access Protocol</td></tr>
+        <tr><th>WebDAV</th><td>Web Distributed Authoring and Versioning</td></tr>
+        <tr><th>X.400</th><td>Message Handling Service Protocol</td></tr>
+        <tr><th>X.500</th><td>Directory Access Protocol (DAP)</td></tr>
+        <tr><th>XMPP</th><td>Extensible Messaging and Presence Protocol</td></tr>
+      </table>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <%= render '/partials/layers.html' %>
+    </div>
+  </div>
+</article>

@@ -1,5 +1,9 @@
-<span class="pull-right" style="margin-top:-3em;">
+<span class="pull-right">
   <% @config[:languages].each do |k, lang| %>
-  <a href="">asd<%= lang[:title] %></a>
+    <% if @item[:language] == k.to_s %>
+      <span class="text-muted"><%= lang[:text] %></span> &nbsp;
+    <% else %>
+      <a href="<%= @items.select {|i| i[:language] == k.to_s && i[:item] == @item[:item] }.first.path %>" lang="<%= k %>" hreflang="<%= k %>"> <%= lang[:text] %> </a> &nbsp;
+    <% end %>
   <% end %>
 </span>

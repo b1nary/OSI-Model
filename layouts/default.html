@@ -16,11 +16,13 @@
 <body>
   <% if @item[:header] %>
   <header class="<%= @item[:item] %>">
+    <%= render '/partials/languages.html' %>
     <h1>
-      <a href="/"><i class="fa fa-arrow-left"></i></a> &nbsp;
+      <a href="/<%= "#{@item[:language]}/" if @item[:language] != 'en' %>"><i class="fa fa-arrow-left"></i></a> &nbsp;
       <span class="layer"><%= @item[:header][:layer] %></span>
       <i class="fa fa-<%= @item[:header][:icon] %> fa-fw"></i>
       <strong><%= @item[:header][:title] %></strong>
+      <% if @item[:header][:small] %><small> &nbsp; <%= @item[:header][:small] %></small><% end %>
     </h1>
   </header>
   <% end %>
